@@ -1,0 +1,37 @@
+
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 570px);
+    gap: 26px;
+    place-content: center;
+
+}
+.input-search{
+    background-color: var(--white);
+    border: 1px solid var(--dark);
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 36px;
+}
+.content-field-message{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 570px);
+    place-content: center;
+}
+.field-message-warning{
+    border: 1px solid var(--dark);
+    padding: 60px;
+    border-radius: 20px;
+    background-color:rgb(228, 170, 100);
+}
+
+@media (max-width:640px){
+    .input-container{
+        grid-template-columns: repeat(auto-fill, 300px);
+    }
+    .content-field-message{
+        grid-template-columns: repeat(auto-fill, 300px);
+    }
+}

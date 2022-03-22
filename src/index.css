@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+    --very-light-blue: #1FB6FF;
+    --white: #FFFFFF;
+    --black: #424c52;
+    --dark: #d7d7d7;
+    --sm: 14px;
+    --md:16px;
+    --lg:18px;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: var(--black);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-primary{
+    background-color: var(--very-light-blue);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 130px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 35px;
 }
+
+.btn-primary:hover{
+    width: 135px;
+    height: 40px;
+}
+.btn-dark{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.content-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.backGround-dark{
+    background-color: #282A36;
+    color: white;
+}
+.backGround-light{
+    background-color: var(--white);
+    color: var(--black);
+}
+.on-click{
+    cursor: pointer;
+}
+
+@media (max-width:640px){
+    .btn-primary{
+        bottom: 0;
+        width: inherit;
+        margin-bottom: 24px;
+        font-size: var(--sm);
+    }
+}
+
